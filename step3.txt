@@ -1,0 +1,44 @@
+Step 3:
+
+React Components
+================
+
+Open index.jsx
+
+
+Add the following code
+----------------------
+
+        import { BaseView } from './components/BaseView.jsx';
+
+
+        render(
+            <BaseView />,
+            document.getElementById('bodyWrapper')
+        );
+
+
+
+BaseView
+==================
+
+BaseViewModel
+------------
+
+        var BaseViewModel = {
+            headerTitle: "React"
+        }
+
+
+BaseView Constructor
+--------------------
+        super(props);
+        this.state = BaseViewModel
+        this.onHelloReactClick = this.onHelloReactClick.bind(this);
+        this.onHelloWorldClick = this.onHelloWorldClick.bind(this);
+
+
+Add HeaderView Component to BaseView's render
+---------------------------------------------
+        
+        <HeaderView headerTitle={this.state.headerTitle}/>

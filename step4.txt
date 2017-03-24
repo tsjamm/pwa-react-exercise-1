@@ -1,0 +1,28 @@
+Step 4:
+
+
+Add the Web Manifest link to the html page
+------------------------------------------
+
+<link rel="manifest" href="./manifest.json">
+
+
+Force Reload Chrome.
+
+
+
+Copy the following files into your file server git repository (gh-pages one)
+
+    build --|---assets
+            |---scripts
+            |---styles
+            |---react
+            |---favicon.ico
+            |---index.html
+            |---manifest.json
+
+Once you push you gh-pages branch to github, open the link
+
+<Your-Github-Username>.github.io/<Your-Github-Repo-Name>/
+
+You should see Hello React App

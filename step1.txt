@@ -1,0 +1,9 @@
+
+Open Terminal
+
+Change to the work directory, then
+
+$ npm install -d
+
+
+This will install all the npm dependencies listed in package.json
